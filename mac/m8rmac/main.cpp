@@ -33,6 +33,16 @@ static void usage(const char* name)
 //m8rscript::M8rscriptScriptingLanguage m8rscriptScriptingLanguage;
 //marly::MarlyScriptingLanguage marlyScriptingLanguage;
 
+class Sample : public m8r::Executable
+{
+public:
+    virtual m8r::CallReturnValue execute() override
+    {
+        print("***** Hello Native World!!!\n");
+        return m8r::CallReturnValue(m8r::CallReturnValue::Type::Finished);
+    }
+};
+
 int main(int argc, char * argv[])
 {
     int opt;
@@ -119,7 +129,7 @@ int main(int argc, char * argv[])
         fclose(fromFile);
     }
 
-    application.runAutostartTask();
+    application.runAutostartTask(m8r::SharedPtr<Sample>(new Sample()));
     
     while (true) {
         application.runOneIteration();

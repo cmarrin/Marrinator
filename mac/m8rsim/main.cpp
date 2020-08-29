@@ -24,6 +24,16 @@ static bool controlState = false;
 static constexpr m8r::Duration ExecutionLoopIdleDelay = 2ms;
 static constexpr m8r::Duration HeartOnTime = 100ms;
 
+class Sample : public m8r::Executable
+{
+public:
+    virtual m8r::CallReturnValue execute() override
+    {
+        print("***** Hello Native World!!!\n");
+        return m8r::CallReturnValue(m8r::CallReturnValue::Type::Finished);
+    }
+};
+
 static void escape(std::string& s, char c, const char* replacement)
 {
     size_t pos = 0;
@@ -129,7 +139,7 @@ int main(int argc, char **argv)
                 evalArray.push_back(line);
             });
             application = new m8r::Application(23);
-            application->runAutostartTask();
+            application->runAutostartTask(m8r::SharedPtr<Sample>(new Sample()));
         }
         
         m8r::system()->setDefaultHeartOnTime(HeartOnTime);
