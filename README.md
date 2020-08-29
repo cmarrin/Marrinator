@@ -27,7 +27,7 @@ The system is designed to run on the the Wemos D1 Mini, although it's not hard t
 3) Add a path to in you environment: `export IDF_PATH=/Users/<your username>/esp/ESP8266_RTOS_SDK`
 4) Add a path for your serial port: `export ESPPORT=/dev/cu.usbserial-2430`
 
-The port is an example. Connect your Wemos via USB and look in `/dev`. There should be a `cu.usbserial-xxxx` file in there. Use that. If there is more than one you probably have something else connected.
+The port above is an example. Connect your Wemos via USB and look in `/dev`. There should be a `cu.usbserial-xxxx` file in there. Use that. If there is more than one you probably have something else connected.
 
 Once that is installed you can go to the esp directory and type:
 
