@@ -24,7 +24,7 @@ The system is designed to run on the the Wemos D1 Mini, although it's not hard t
 
 1) Install the [ESP toolchain](https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/get-started/macos-setup.html)
 2) Install the [ESP RTOS SDK](https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/get-started/index.html#get-esp8266-rtos-sdk)
-3) Add a path to in you environment: `IDF_PATH=/Users/<your username>/esp/ESP8266_RTOS_SDK`
+3) Add a path to in you environment: `export IDF_PATH=/Users/<your username>/esp/ESP8266_RTOS_SDK`
 4) Add a path for your serial port: `export ESPPORT=/dev/cu.usbserial-2430`
 
 The port is an example. Connect your Wemos via USB and look in `/dev`. There should be a `cu.usbserial-xxxx` file in there. Use that. If there is more than one you probably have something else connected.
