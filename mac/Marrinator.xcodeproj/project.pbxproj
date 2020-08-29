@@ -133,6 +133,7 @@
 		49DD77481D84D94900D7C374 /* Simulate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Simulate.png; sourceTree = "<group>"; };
 		49E6882824F965CA00EECD46 /* libm8r.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libm8r.xcodeproj; path = ../../libm8r/mac/libm8r.xcodeproj; sourceTree = "<group>"; };
 		49FAB95524F9D1B100E71C93 /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; name = favicon.ico; path = ../web/favicon.ico; sourceTree = "<group>"; };
+		49FAB95724F9D6F200E71C93 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = ../web/index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +249,7 @@
 		49FAB95324F9D1A000E71C93 /* web */ = {
 			isa = PBXGroup;
 			children = (
+				49FAB95724F9D6F200E71C93 /* index.html */,
 				49FAB95524F9D1B100E71C93 /* favicon.ico */,
 			);
 			name = web;

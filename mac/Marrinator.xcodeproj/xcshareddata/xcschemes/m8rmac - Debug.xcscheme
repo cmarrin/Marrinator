@@ -57,6 +57,10 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
+            argument = "web/index.html"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
             argument = "web/favicon.ico"
             isEnabled = "YES">
          </CommandLineArgument>
