@@ -138,7 +138,7 @@ int main(int argc, char **argv)
                 line += "';";
                 evalArray.push_back(line);
             });
-            application = new m8r::Application(23);
+            application = new m8r::Application(m8r::Application::HeartbeatType::Status, "/sys/bin", 23);
             application->runAutostartTask(m8r::SharedPtr<Sample>(new Sample()));
         }
         

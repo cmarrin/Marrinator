@@ -62,7 +62,7 @@ int main(int argc, char * argv[])
     }
         
     m8r::initMacSystemInterface(fsFile, [](const char* s) { ::printf("%s", s); });
-    m8r::Application application(port);
+    m8r::Application application(m8r::Application::HeartbeatType::None, nullptr, port);
     
     //m8r::system()->registerScriptingLanguage(&m8rscriptScriptingLanguage);
     //m8r::system()->registerScriptingLanguage(&marlyScriptingLanguage);
